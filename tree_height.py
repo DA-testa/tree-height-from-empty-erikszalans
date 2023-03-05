@@ -34,14 +34,14 @@ def main():
         with open ("/test" + failaNosaukums, "r") as file:
             n = int(file.readline())
             vecaki = list(map(int, file.readline().split()))
-            print(compute_height(n,vecaki))
+            print(compute_height(n,vecaki)+1)
                 
         
     elif ievade == "I":
         n = int(input())
         vecaki = list(map(int,input().split()))
         
-    print(compute_height(n,vecaki))
+    print(compute_height(n,vecaki)+1)
 
 
 
