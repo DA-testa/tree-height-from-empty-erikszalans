@@ -27,9 +27,9 @@ def compute_height(n, parents):
 
 
 def main():
-    ievade = input("ievadiet I(lai ievaditu no tastatūras) vai F(lai ievadītu no failiem): ")
+    ievade = input()
     if ievade == "F":
-        failaNosaukums = input("Ievadiet faila nosaukumu: ")
+        failaNosaukums = input()
     
         with open ("/workspaces/tree-height-from-empty-erikszalans/test" + failaNosaukums, 'r') as file:
             n = int(file.readline())
