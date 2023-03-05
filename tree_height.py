@@ -36,10 +36,10 @@ def main():
             return
     
         try:
-            with open("/test/" + failaNosaukums, "r") as file:
-                linijas = file.readlines()
-                n = int(linijas[0])
-                vecaki = list(map(int, linijas[1].split()))
+            with open ("/test/" + failaNosaukums, 'r') as file:
+                linijas = int(file.readline())
+                vecaki = list(map(int, file.readline().split()))
+                print(compute_height(linijas,vecaki) + 1)
                 
         except FileNotFoundError:
             print("fails nav atrasts")
