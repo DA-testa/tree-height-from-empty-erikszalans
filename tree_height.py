@@ -31,7 +31,7 @@ def main():
     if ievade == "F":
         failaNosaukums = input()
     
-        with open ("/workspaces/tree-height-from-empty-erikszalans/test" + failaNosaukums, 'r') as file:
+        with open ("/test" + failaNosaukums, "r") as file:
             n = int(file.readline())
             vecaki = list(map(int, file.readline().split()))
             print(compute_height(n,vecaki) + 1)
