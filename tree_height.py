@@ -30,30 +30,17 @@ def main():
     ievade = input("ievadiet I(lai ievaditu no tastatūras) vai F(lai ievadītu no failiem): ")
     if ievade == "F":
         failaNosaukums = input("Ievadiet faila nosaukumu: ")
-
-        if 'a' in failaNosaukums:
-            print("kļūda, fails satur burtu a")
-            return
     
-        try:
-            with open ("/test/" + failaNosaukums, 'r') as file:
+        with open ("/test/" + failaNosaukums, 'r') as file:
                 linijas = int(file.readline())
                 vecaki = list(map(int, file.readline().split()))
                 print(compute_height(linijas,vecaki) + 1)
                 
-        except FileNotFoundError:
-            print("fails nav atrasts")
-            return
         
     elif ievade == "I":
         n = int(input())
         vecaki = list(map(int,input().split()))
         
-    else:
-        print("nepareiza ievade, ievadiet burtu I vai F")
-        return
-
-
     print(compute_height(n,vecaki) + 1)
 
 
