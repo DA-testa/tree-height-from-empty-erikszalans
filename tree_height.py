@@ -55,8 +55,7 @@ def main():
 
     print(compute_height(n,vecaki) + 1)
 
-def new_func(failaNosaukums):
-    return open (failaNosaukums,"/workspaces/tree-height-from-empty-erikszalans/test")
+
 
 sys.setrecursionlimit(10**7) 
 threading.stack_size(2**27)   
