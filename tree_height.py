@@ -36,7 +36,7 @@ def main():
             return
     
         try:
-            with open (failaNosaukums, "r") as file:
+            with open("/workspaces/tree-height-from-empty-erikszalans/test") as file:
                 linijas = file.readlines()
                 n = int(linijas[0])
                 vecaki = list(map(int, linijas[1].split()))
@@ -54,6 +54,9 @@ def main():
 
 
     print(compute_height(n,vecaki) + 1)
+
+def new_func(failaNosaukums):
+    return open (failaNosaukums,"/workspaces/tree-height-from-empty-erikszalans/test")
 
 sys.setrecursionlimit(10**7) 
 threading.stack_size(2**27)   
