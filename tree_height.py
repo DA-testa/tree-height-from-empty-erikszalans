@@ -31,10 +31,10 @@ def main():
     if ievade == "F":
         failaNosaukums = input("Ievadiet faila nosaukumu: ")
     
-        with open ("/test/" + failaNosaukums, 'r') as file:
-                linijas = int(file.readline())
-                vecaki = list(map(int, file.readline().split()))
-                print(compute_height(linijas,vecaki) + 1)
+        with open ("/workspaces/tree-height-from-empty-erikszalans/test" + failaNosaukums, 'r') as file:
+            n = int(file.readline())
+            vecaki = list(map(int, file.readline().split()))
+            print(compute_height(n,vecaki) + 1)
                 
         
     elif ievade == "I":
