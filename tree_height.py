@@ -36,7 +36,7 @@ def main():
             return
     
         try:
-            with open("/workspaces/tree-height-from-empty-erikszalans/test") as file:
+            with open("/workspaces/tree-height-from-empty-erikszalans/test" + failaNosaukums, 'r') as file:
                 linijas = file.readlines()
                 n = int(linijas[0])
                 vecaki = list(map(int, linijas[1].split()))
